@@ -14646,112 +14646,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import pandas as pd</span>
-<span class="c1"># from pandas.io.json import json_normalize</span>
-<span class="c1"># import requests</span>
-<span class="c1"># import json</span>
-
-<<<<<<< HEAD
-<span class="c1"># api_key = &quot;&quot;</span>
-<span class="c1"># summoner_name = &quot;Yu Yevin&quot;</span>
-=======
-<span class="c1"># api_key = ""</span>
-<span class="c1"># summoner_name = "Yu Yevin"</span>
->>>>>>> 2fe6cfadc799c73ca0afbe346d7ce25fe1d4a8a3
-
-<span class="c1"># url = f&quot;https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summoner_name}&quot;</span>
-
-<span class="c1"># headers = {</span>
-<span class="c1">#     &quot;X-Riot-Token&quot;: api_key</span>
-<span class="c1"># }</span>
-
-<span class="c1"># response = requests.get(url, headers=headers)</span>
-
-<span class="c1"># if response.status_code == 200:</span>
-<span class="c1">#     data = response.json()</span>
-<span class="c1">#     puuid = data[&quot;puuid&quot;]</span>
-<span class="c1">#     print(f&quot;Your puuid is: {puuid}&quot;)</span>
-<span class="c1"># else:</span>
-<span class="c1">#     print(&quot;An error occurred:&quot;, response.text)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># region = &quot;americas&quot;</span>
-
-<span class="c1"># # Get a list of match IDs for the player</span>
-<span class="c1"># url = f&quot;https://{region}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids&quot;</span>
-<span class="c1"># headers = {</span>
-<span class="c1">#     &quot;X-Riot-Token&quot;: api_key</span>
-<span class="c1"># }</span>
-<span class="c1"># response = requests.get(url, headers=headers)</span>
-
-<span class="c1"># if response.status_code == 200:</span>
-<span class="c1">#     match_ids = response.json()</span>
-<span class="c1"># else:</span>
-<span class="c1">#     print(&quot;An error occurred:&quot;, response.text)</span>
-<span class="c1">#     exit()</span>
-
-<span class="c1"># # Get the details for each match</span>
-<span class="c1"># match_history = []</span>
-<span class="c1"># for match_id in match_ids:</span>
-<span class="c1">#     url = f&quot;https://{region}.api.riotgames.com/tft/match/v1/matches/{match_id}&quot;</span>
-<span class="c1">#     response = requests.get(url, headers=headers)</span>
-
-<span class="c1">#     if response.status_code == 200:</span>
-<span class="c1">#         data = response.json()</span>
-<span class="c1">#         match_history.append(data)</span>
-<span class="c1">#     else:</span>
-<span class="c1">#         print(&quot;An error occurred:&quot;, response.text)</span>
-
-<span class="c1"># # Print the match history</span>
-<span class="c1"># print(json.dumps(match_history, indent=2))</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># data = pd.json_normalize(match_history)</span>
-
-<span class="c1"># df = pd.DataFrame(data)</span>
-
-<span class="c1"># df.head()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14775,7 +14669,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14790,13 +14684,33 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">csv</span> <span class="o">=</span> <span class="s2">&quot;tft_match_history.csv&quot;</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>C:\Users\SKaha\AppData\Local\Temp\ipykernel_135664\2413949547.py:7: DtypeWarning: Columns (36) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(csv)
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14811,7 +14725,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14828,6 +14742,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;placement&#39;, &#39;match_id&#39;, &#39;augment0&#39;, &#39;augment1&#39;, &#39;augment2&#39;, &#39;Set7_Assassin&#39;, &#39;Set7_Astral&#39;, &#39;Set7_Bard&#39;, &#39;Set7_Bruiser&#39;, &#39;Set7_Cannoneer&#39;, &#39;Set7_Cavalier&#39;, &#39;Set7_Dragon&#39;, &#39;Set7_Dragonmancer&#39;, &#39;Set7_Evoker&#39;, &#39;Set7_Guardian&#39;, &#39;Set7_Guild&#39;, &#39;Set7_Jade&#39;, &#39;Set7_Legend&#39;, &#39;Set7_Mage&#39;, &#39;Set7_Mirage&#39;, &#39;Set7_Mystic&#39;, &#39;Set7_Ragewing&#39;, &#39;Set7_Revel&#39;, &#39;Set7_Scalescorn&#39;, &#39;Set7_Shapeshifter&#39;, &#39;Set7_Shimmerscale&#39;, &#39;Set7_SpellThief&#39;, &#39;Set7_Starcaller&#39;, &#39;Set7_Swiftshot&#39;, &#39;Set7_Tempest&#39;, &#39;Set7_Trainer&#39;, &#39;Set7_Warrior&#39;, &#39;Set7_Whispers&#39;, &#39;TFT7_Aatrox&#39;, &#39;TFT7_Aatrox_item0&#39;, &#39;TFT7_Aatrox_item1&#39;, &#39;TFT7_Aatrox_item2&#39;, &#39;TFT7_Anivia&#39;, &#39;TFT7_Anivia_item0&#39;, &#39;TFT7_Anivia_item1&#39;, &#39;TFT7_Anivia_item2&#39;, &#39;TFT7_AoShin&#39;, &#39;TFT7_AoShin_item0&#39;, &#39;TFT7_AoShin_item1&#39;, &#39;TFT7_AoShin_item2&#39;, &#39;TFT7_Ashe&#39;, &#39;TFT7_Ashe_item0&#39;, &#39;TFT7_Ashe_item1&#39;, &#39;TFT7_Ashe_item2&#39;, &#39;TFT7_AurelionSol&#39;, &#39;TFT7_AurelionSol_item0&#39;, &#39;TFT7_AurelionSol_item1&#39;, &#39;TFT7_AurelionSol_item2&#39;, &#39;TFT7_Bard&#39;, &#39;TFT7_Bard_item0&#39;, &#39;TFT7_Bard_item1&#39;, &#39;TFT7_Bard_item2&#39;, &#39;TFT7_Braum&#39;, &#39;TFT7_Braum_item0&#39;, &#39;TFT7_Braum_item1&#39;, &#39;TFT7_Braum_item2&#39;, &#39;TFT7_Corki&#39;, &#39;TFT7_Corki_item0&#39;, &#39;TFT7_Corki_item1&#39;, &#39;TFT7_Corki_item2&#39;, &#39;TFT7_Diana&#39;, &#39;TFT7_Diana_item0&#39;, &#39;TFT7_Diana_item1&#39;, &#39;TFT7_Diana_item2&#39;, &#39;TFT7_DragonBlue&#39;, &#39;TFT7_DragonBlue_item0&#39;, &#39;TFT7_DragonBlue_item1&#39;, &#39;TFT7_DragonBlue_item2&#39;, &#39;TFT7_DragonGold&#39;, &#39;TFT7_DragonGold_item0&#39;, &#39;TFT7_DragonGold_item1&#39;, &#39;TFT7_DragonGold_item2&#39;, &#39;TFT7_DragonGreen&#39;, &#39;TFT7_DragonGreen_item0&#39;, &#39;TFT7_DragonGreen_item1&#39;, &#39;TFT7_DragonGreen_item2&#39;, &#39;TFT7_DragonPurple&#39;, &#39;TFT7_DragonPurple_item0&#39;, &#39;TFT7_DragonPurple_item1&#39;, &#39;TFT7_DragonPurple_item2&#39;, &#39;TFT7_Elise&#39;, &#39;TFT7_Elise_item0&#39;, &#39;TFT7_Elise_item1&#39;, &#39;TFT7_Elise_item2&#39;, &#39;TFT7_Ezreal&#39;, &#39;TFT7_Ezreal_item0&#39;, &#39;TFT7_Ezreal_item1&#39;, &#39;TFT7_Ezreal_item2&#39;, &#39;TFT7_Gnar&#39;, &#39;TFT7_Gnar_item0&#39;, &#39;TFT7_Gnar_item1&#39;, &#39;TFT7_Gnar_item2&#39;, &#39;TFT7_Hecarim&#39;, &#39;TFT7_Hecarim_item0&#39;, &#39;TFT7_Hecarim_item1&#39;, &#39;TFT7_Hecarim_item2&#39;, &#39;TFT7_Heimerdinger&#39;, &#39;TFT7_Heimerdinger_item0&#39;, &#39;TFT7_Heimerdinger_item1&#39;, &#39;TFT7_Heimerdinger_item2&#39;, &#39;TFT7_Illaoi&#39;, &#39;TFT7_Illaoi_item0&#39;, &#39;TFT7_Illaoi_item1&#39;, &#39;TFT7_Illaoi_item2&#39;, &#39;TFT7_Jinx&#39;, &#39;TFT7_Jinx_item0&#39;, &#39;TFT7_Jinx_item1&#39;, &#39;TFT7_Jinx_item2&#39;, &#39;TFT7_Karma&#39;, &#39;TFT7_Karma_item0&#39;, &#39;TFT7_Karma_item1&#39;, &#39;TFT7_Karma_item2&#39;, &#39;TFT7_Kayn&#39;, &#39;TFT7_Kayn_item0&#39;, &#39;TFT7_Kayn_item1&#39;, &#39;TFT7_Kayn_item2&#39;, &#39;TFT7_LeeSin&#39;, &#39;TFT7_LeeSin_item0&#39;, &#39;TFT7_LeeSin_item1&#39;, &#39;TFT7_LeeSin_item2&#39;, &#39;TFT7_Leona&#39;, &#39;TFT7_Leona_item0&#39;, &#39;TFT7_Leona_item1&#39;, &#39;TFT7_Leona_item2&#39;, &#39;TFT7_Lillia&#39;, &#39;TFT7_Lillia_item0&#39;, &#39;TFT7_Lillia_item1&#39;, &#39;TFT7_Lillia_item2&#39;, &#39;TFT7_Lulu&#39;, &#39;TFT7_Lulu_item0&#39;, &#39;TFT7_Lulu_item1&#39;, &#39;TFT7_Lulu_item2&#39;, &#39;TFT7_Nami&#39;, &#39;TFT7_Nami_item0&#39;, &#39;TFT7_Nami_item1&#39;, &#39;TFT7_Nami_item2&#39;, &#39;TFT7_Neeko&#39;, &#39;TFT7_Neeko_item0&#39;, &#39;TFT7_Neeko_item1&#39;, &#39;TFT7_Neeko_item2&#39;, &#39;TFT7_Nidalee&#39;, &#39;TFT7_Nidalee_item0&#39;, &#39;TFT7_Nidalee_item1&#39;, &#39;TFT7_Nidalee_item2&#39;, &#39;TFT7_Nunu&#39;, &#39;TFT7_Nunu_item0&#39;, &#39;TFT7_Nunu_item1&#39;, &#39;TFT7_Nunu_item2&#39;, &#39;TFT7_Olaf&#39;, &#39;TFT7_Olaf_item0&#39;, &#39;TFT7_Olaf_item1&#39;, &#39;TFT7_Olaf_item2&#39;, &#39;TFT7_Ornn&#39;, &#39;TFT7_Ornn_item0&#39;, &#39;TFT7_Ornn_item1&#39;, &#39;TFT7_Ornn_item2&#39;, &#39;TFT7_Pyke&#39;, &#39;TFT7_Pyke_item0&#39;, &#39;TFT7_Pyke_item1&#39;, &#39;TFT7_Pyke_item2&#39;, &#39;TFT7_Qiyana&#39;, &#39;TFT7_Qiyana_item0&#39;, &#39;TFT7_Qiyana_item1&#39;, &#39;TFT7_Qiyana_item2&#39;, &#39;TFT7_Ryze&#39;, &#39;TFT7_Ryze_item0&#39;, &#39;TFT7_Ryze_item1&#39;, &#39;TFT7_Ryze_item2&#39;, &#39;TFT7_Sejuani&#39;, &#39;TFT7_Sejuani_item0&#39;, &#39;TFT7_Sejuani_item1&#39;, &#39;TFT7_Sejuani_item2&#39;, &#39;TFT7_Senna&#39;, &#39;TFT7_Senna_item0&#39;, &#39;TFT7_Senna_item1&#39;, &#39;TFT7_Senna_item2&#39;, &#39;TFT7_Sett&#39;, &#39;TFT7_Sett_item0&#39;, &#39;TFT7_Sett_item1&#39;, &#39;TFT7_Sett_item2&#39;, &#39;TFT7_Shen&#39;, &#39;TFT7_Shen_item0&#39;, &#39;TFT7_Shen_item1&#39;, &#39;TFT7_Shen_item2&#39;, &#39;TFT7_Shyvana&#39;, &#39;TFT7_Shyvana_item0&#39;, &#39;TFT7_Shyvana_item1&#39;, &#39;TFT7_Shyvana_item2&#39;, &#39;TFT7_Skarner&#39;, &#39;TFT7_Skarner_item0&#39;, &#39;TFT7_Skarner_item1&#39;, &#39;TFT7_Skarner_item2&#39;, &#39;TFT7_Sona&#39;, &#39;TFT7_Sona_item0&#39;, &#39;TFT7_Sona_item1&#39;, &#39;TFT7_Sona_item2&#39;, &#39;TFT7_Soraka&#39;, &#39;TFT7_Soraka_item0&#39;, &#39;TFT7_Soraka_item1&#39;, &#39;TFT7_Soraka_item2&#39;, &#39;TFT7_Swain&#39;, &#39;TFT7_Swain_item0&#39;, &#39;TFT7_Swain_item1&#39;, &#39;TFT7_Swain_item2&#39;, &#39;TFT7_Sylas&#39;, &#39;TFT7_Sylas_item0&#39;, &#39;TFT7_Sylas_item1&#39;, &#39;TFT7_Sylas_item2&#39;, &#39;TFT7_TahmKench&#39;, &#39;TFT7_TahmKench_item0&#39;, &#39;TFT7_TahmKench_item1&#39;, &#39;TFT7_TahmKench_item2&#39;, &#39;TFT7_Talon&#39;, &#39;TFT7_Talon_item0&#39;, &#39;TFT7_Talon_item1&#39;, &#39;TFT7_Talon_item2&#39;, &#39;TFT7_Taric&#39;, &#39;TFT7_Taric_item0&#39;, &#39;TFT7_Taric_item1&#39;, &#39;TFT7_Taric_item2&#39;, &#39;TFT7_Thresh&#39;, &#39;TFT7_Thresh_item0&#39;, &#39;TFT7_Thresh_item1&#39;, &#39;TFT7_Thresh_item2&#39;, &#39;TFT7_TrainerDragon&#39;, &#39;TFT7_TrainerDragon_item0&#39;, &#39;TFT7_TrainerDragon_item1&#39;, &#39;TFT7_TrainerDragon_item2&#39;, &#39;TFT7_Tristana&#39;, &#39;TFT7_Tristana_item0&#39;, &#39;TFT7_Tristana_item1&#39;, &#39;TFT7_Tristana_item2&#39;, &#39;TFT7_Twitch&#39;, &#39;TFT7_Twitch_item0&#39;, &#39;TFT7_Twitch_item1&#39;, &#39;TFT7_Twitch_item2&#39;, &#39;TFT7_Varus&#39;, &#39;TFT7_Varus_item0&#39;, &#39;TFT7_Varus_item1&#39;, &#39;TFT7_Varus_item2&#39;, &#39;TFT7_Vladimir&#39;, &#39;TFT7_Vladimir_item0&#39;, &#39;TFT7_Vladimir_item1&#39;, &#39;TFT7_Vladimir_item2&#39;, &#39;TFT7_Volibear&#39;, &#39;TFT7_Volibear_item0&#39;, &#39;TFT7_Volibear_item1&#39;, &#39;TFT7_Volibear_item2&#39;, &#39;TFT7_Xayah&#39;, &#39;TFT7_Xayah_item0&#39;, &#39;TFT7_Xayah_item1&#39;, &#39;TFT7_Xayah_item2&#39;, &#39;TFT7_Yasuo&#39;, &#39;TFT7_Yasuo_item0&#39;, &#39;TFT7_Yasuo_item1&#39;, &#39;TFT7_Yasuo_item2&#39;, &#39;TFT7_Yone&#39;, &#39;TFT7_Yone_item0&#39;, &#39;TFT7_Yone_item1&#39;, &#39;TFT7_Yone_item2&#39;, &#39;TFT7_Zoe&#39;, &#39;TFT7_Zoe_item0&#39;, &#39;TFT7_Zoe_item1&#39;, &#39;TFT7_Zoe_item2&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14855,8 +14790,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="s2">&quot;object&quot;</span><span class="p">):</span>
     <span class="n">df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">&quot;None&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14871,7 +14804,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Perfet. This will be much easier to process. The first thing to note is that we don't really need the match_ids, so let's drop that. At the same time, we can split our data into X and Y sets, the Y set will be our target for our machine learning algorithm later on. We'll end up putting them back together, but now we have a nice defined target set. Let's add a couple columns that give us the total counts for each item, trait, and unit.</p>
+<p>Perfect. This will be much easier to process. The first thing to note is that we don't really need the match_ids, so let's drop that. At the same time, we can split our data into X and Y sets, the Y set will be our target for our machine learning algorithm later on. We'll end up putting them back together, but now we have a nice defined target set. Let's add a couple columns that give us the total counts for each item, trait, and unit.</p>
 
 </div>
 </div>
@@ -14932,7 +14865,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">X</span><span class="p">[</span><span class="n">num_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">num_cols</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span>
 <span class="n">mdf</span><span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mdf</span><span class="p">[</span><span class="s1">&#39;placement&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Y</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mdf</span><span class="p">)</span>
 </pre></div>
 
      </div>
